@@ -2,7 +2,7 @@
   
   class Parser {
     
-    public $value;
+    public $result;
     
     private $content;
     private $column = 0;
@@ -29,7 +29,7 @@
       $this->nextsym ();
       $this->statement ();
       
-      $this->value = $this->expression ();
+      $this->result = $this->expression ();
       $this->statement ();  // flush ';'
       
     }
