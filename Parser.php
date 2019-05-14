@@ -134,7 +134,7 @@
         
         while (is_numeric ($this->char)) {
           
-          $this->int_value = ($this->int_value * 10 + intval ($this->char, 10));
+          $this->int_value = intval ($this->char, 10);
           $this->nextsym ();
           
         }
