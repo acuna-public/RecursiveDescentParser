@@ -198,8 +198,6 @@
         
       }
       
-      return $this->token;
-      
     }
     
     private function error ($msg) {
